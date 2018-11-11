@@ -1,0 +1,92 @@
+@keyframes andar{
+	0%{
+		background-color: #d30c0c;
+	}
+	20%{
+		background-color: #d30ccc;
+	}
+	40%{
+		background-color: #1f0cd3;
+	}
+	60%{
+		background-color: #0cd3d1;
+	}
+	80%{
+		background-color: #1fd30c;
+	}
+	100%{
+		transform: rotateY(360deg);
+		background-color: #d3c30c;
+	}
+}
+
+@keyframes fonte{
+	0%{
+		color: #d30c0c;
+	}
+	20%{
+		color: #d30ccc;
+	}
+	40%{
+		color: #1f0cd3;
+	}
+	60%{
+		color: #0cd3d1;
+	}
+	80%{
+		color: #1fd30c;
+	}
+	100%{
+		color: #d3c30c;
+	}
+}
+
+#box{
+	position: absolute;
+	background: black;
+	border: thick solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+.ball{
+	position: absolute;
+	background: white;
+	border-radius: 50%;
+}
+
+#paddle{
+	position: absolute;
+	background: white;
+}
+
+.brick{
+	position: absolute;
+	animation: andar 1s infinite alternate;
+}
+
+.score{
+	position: absolute;
+	top: 410px;
+	left: 170px;
+	z-index: 100;
+	font-family: "Impact";
+	font-size: 40px;
+	animation: fonte 1s infinite alternate;
+}
+
+.titulo{
+	position: absolute;
+	top: 50px;
+	left: 525px;
+	z-index: 100;
+	font-family: "Impact";
+	font-size: 70px;
+	color: white;
+}
+
+html{
+	background: url("http://i.imgur.com/C4Lrmar.png");
+	padding:0;
+    margin:0;
+}
